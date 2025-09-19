@@ -1,6 +1,5 @@
 import AbstractView from "./abstract-view"
 
-
 function getLayout(product) {
 
     return (
@@ -11,9 +10,6 @@ function getLayout(product) {
       </li>`
     );
 }
-
-
-
 
 export default class ProductView extends AbstractView{
     #product = null;

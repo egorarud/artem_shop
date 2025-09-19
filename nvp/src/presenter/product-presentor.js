@@ -11,7 +11,7 @@ export default class ProductsPresenter {
     #container;
 
     constructor() { 
-        this.#productsModal = new productsModal
+        this.#productsModal = new productsModal()
         this.#container = document.querySelector(".catalog")
     }
 

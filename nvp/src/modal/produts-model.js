@@ -1,6 +1,6 @@
 import { products } from "../../mock/products"
 
-export default class productsModal { 
+export default class ProductsModel { 
    #products = products;
 
    get products() { 
