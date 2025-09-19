@@ -11,7 +11,11 @@ export default class ProductsPresenter {
     #container;
 
     constructor() { 
+<<<<<<< HEAD
         this.#productsModal = new productsModal // экземпляр класса создает со скобками new Class()
+=======
+        this.#productsModal = new productsModal()
+>>>>>>> 46dc8a9c000e8558778d33b7d055c3d24a56db7b
         this.#container = document.querySelector(".catalog")
     }
 
