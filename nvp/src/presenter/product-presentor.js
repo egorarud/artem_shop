@@ -7,11 +7,11 @@ import EmptyCatalogView from "../view/empty-product-view.js";
 
 
 export default class ProductsPresenter { 
-    #productsModal;
+    #productsModal;// model
     #container;
 
     constructor() { 
-        this.#productsModal = new productsModal
+        this.#productsModal = new productsModal // экземпляр класса создает со скобками new Class()
         this.#container = document.querySelector(".catalog")
     }
 

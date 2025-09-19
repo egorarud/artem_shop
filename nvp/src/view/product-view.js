@@ -1,8 +1,8 @@
 import AbstractView from "./abstract-view"
 
-
 function getLayout(product) {
 
+    // класс product, а не products
     return (
         `<li class="products" id="${product.id}">
           <img class="product-png" src="public/img/${product.img}" alt="${product.name}">
@@ -12,16 +12,14 @@ function getLayout(product) {
     );
 }
 
-
-
-
 export default class ProductView extends AbstractView{
     #product = null;
     #onOpen
-    constructor(product, content, onOpen) { 
-        super()
+
+    constructor(product, onOpen) { 
+        super();
         this.#product = product;
-        this.#onOpen = onOpen
+        this.#onOpen = onOpen;
         document.querySelector(".products").addEventListener("click", this.#productClickHandler)
     }
 

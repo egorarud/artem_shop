@@ -17,7 +17,7 @@ export default class ModalView extends AbstractView{
     constructor(content, onClose) { 
         super()
         this.#content = content
-        this.onClose = onClose
+        this.onClose = onClose // есть this.#onClose
 
         document.querySelector('.arrow').addEventListener('click', this.#closeButtonClickHandler)
     }
@@ -32,7 +32,7 @@ export default class ModalView extends AbstractView{
     }
 }
 
-
+// название файла черерз тире
 
 
 

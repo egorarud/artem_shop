@@ -15,3 +15,6 @@ export default class productsModal {
       this.#products.find((product) => product.id === id);
    }  
 }
+
+// не modal а model (название папки тоже)
+// имя класса в большой буквы

@@ -4,16 +4,15 @@ import { render } from "../utils/render.js";
 import EmptyCatalogView from "../view/empty-product-view.js";
 import ModalView from "../view/modal.view.js";
 
-
+// много пустого места
 
 export default class ProductsPresenter { 
-
     #modalComponent;
 
     init() {
         this.#modalComponent = new ModalView(content, this.#closeButtonClickHandler)
         this.#modalComponent = new ModalView(content, this.#openButtonClickHandler)
-
+        // компонент модального окна, должен быть один на один и тот же контент
     }
 
     open() { 
@@ -33,3 +32,5 @@ export default class ProductsPresenter {
     }
 
 } 
+
+// название файла через тире, а не точку
